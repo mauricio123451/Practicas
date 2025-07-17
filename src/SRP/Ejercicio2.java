@@ -1,19 +1,27 @@
 
 package SRP;
 
-/**
- *
- * @author Charly Cimino
- * Aprendé más Java en mi canal: https://www.youtube.com/c/CharlyCimino
- * Encontrá más código en mi repo de GitHub: https://github.com/CharlyCimino
- */
 public class Ejercicio2 {
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
-    }
+    public void createInvoice(String client, double amount) {
+      System.out.println("Factura creada para: " + client + " por $" + amount);
 
+      // Validación
+      if (amount <= 0) {
+          System.out.println("El monto no puede ser menor o igual a cero");
+      }
+
+      // Cálculo de impuestos
+      double tax = amount * 0.16;
+      System.out.println("IVA calculado: $" + tax);
+
+      // Enviar por correo (simulación)
+      System.out.println("Enviando factura por correo a " + client + "@example.com");
+  }
+    public void validation(double amount){
+        if(amount <= 0){
+            
+        }
+    }
 }
+
